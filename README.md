@@ -17,6 +17,21 @@
 - Java 17+
 - Gradle 9.1.0
 
+### Troubleshooting (Java)
+
+Для запуска утилиты требуется установленная Java (JDK/JRE) версии 17 или выше.
+
+Проверь, что Java доступна в системе:
+
+```bash
+java -version
+```
+
+Если команда не найдена или Gradle сообщает `JAVA_HOME is not set`, необходимо:
+- установить JDK (например, Temurin JDK 17),
+- убедиться, что `java` доступна в `PATH`,
+- либо что переменная окружения `JAVA_HOME` указывает на каталог установки Java.
+
 ### Сборка (fat-jar)
 
 ```
@@ -76,6 +91,21 @@ Files are created only if the corresponding type is present in the input data.
 
 - Java 17+
 - Gradle 9.1.0
+
+### Troubleshooting (Java)
+
+Java (JDK/JRE) version 17 or higher is required to run the application.
+
+Verify that Java is available on your system:
+
+```bash
+java -version
+```
+
+If the command is not found or Gradle reports `JAVA_HOME is not set`, please:
+- install a JDK (for example, Temurin JDK 17),
+- ensure that `java` is available in `PATH`,
+- or that the `JAVA_HOME` environment variable points to the Java installation directory.
 
 ### Build (fat-jar)
 ```
